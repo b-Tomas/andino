@@ -51,13 +51,13 @@ struct Constants {
   /// @brief PID computation period [ms].
   static constexpr long kPidPeriod{1000 / kPidRate};
   /// @brief PID default tuning proportional gain.
-  static constexpr int kPidKp{30};
+  static constexpr int kPidKp{20};  // Originally was: 30
   /// @brief PID default tuning derivative gain.
-  static constexpr int kPidKd{10};
+  static constexpr int kPidKd{18};  // Originally was: 10
   /// @brief PID default tuning integral gain.
-  static constexpr int kPidKi{0};
+  static constexpr int kPidKi{0};  // Originally was: 0
   /// @brief PID default tuning output gain.
-  static constexpr int kPidKo{10};
+  static constexpr int kPidKo{100};  // Originally was: 10
 };
 
 }  // namespace andino
