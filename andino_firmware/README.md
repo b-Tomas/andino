@@ -28,7 +28,7 @@ source $HOME/.bashrc
 ```
 4. Build and upload the firmware
    - If you're using an arduino uno `pio run --target upload -e uno`
-   - If you're using an arduino nano `pio run --target upload -e nanoatmega328`
+   - If you're using an arduino nano `pio run --target upload -e nanoatmega328` or `pio run --target upload -e nanoatmega328new` for a newer arduino nano v3 with a higher upload baud rate.
 
 ## Description
 
@@ -48,7 +48,7 @@ Note: Remember the carriage return character at the end of the message.
 
 ## Test it!
 
-A serial port connection must be created at 57600 bauds. You can use the serial monitor from Arduino IDE for example.
+A serial port connection must be created at 57600 bauds. You can use the serial monitor from Arduino IDE, a tool like `minicom` or PlatformIO's own serial monitor (for example, using `pio device monitor -b 57600 -p /dev/ttyUSB0 --echo --eol CR -f send_on_enter`).
 
 * Open loop verification:
   - Send `o 255 255` to go full speed
