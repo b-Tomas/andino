@@ -18,15 +18,14 @@
   <exec_depend>teleop_twist_joy</exec_depend>
   <exec_depend>teleop_twist_keyboard</exec_depend>
   <exec_depend>joy_linux</exec_depend>
-  <exec_depend>v4l2_camera</exec_depend>
+  <!-- Build camera_ros from source in the workspace (see camera.launch.py) -->
+  <exec_depend>camera_ros</exec_depend>
   <exec_depend>laser_filters</exec_depend>
   <exec_depend>rosbag2_storage_mcap</exec_depend>
   <exec_depend>xterm</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
-
-  <exec_depend>camera_ros</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
