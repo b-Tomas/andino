@@ -3,4 +3,5 @@ right_wheel_name: right_wheel_joint
 serial_device: /dev/ttyUSB_ARDUINO
 baud_rate: 57600
 timeout: 1000
-enc_ticks_per_rev: 585
+# NOTE(b-Tomas): I got motors with a 1:90 gear ratio, whereas the original design used 1:48
+enc_ticks_per_rev: 4320 # was: 585
